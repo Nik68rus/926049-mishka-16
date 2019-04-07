@@ -1,38 +1,27 @@
-@import "../sass/variables.scss";
+@import "../variables.scss";
+@import "../mixin.scss";
 
 .main-nav__toggle {
   position: relative;
-  font-size: 0;
-  line-height: 0;
-  width: 20px;
-  height: 2px;
+  @include notext-button(20px,2px);
   padding-top: 8px;
   padding-bottom: 6px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .main-nav__toggle::before {
-  position: absolute;
-  content: "";
+  @include pseudo(20px,8px);
   box-sizing: border-box;
-  width: 20px;
-  height: 8px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid $black;
+  border-bottom: 2px solid $black;
   background-color: transparent;
   top: 0;
   left: 0;
 }
 
 .main-nav__toggle::after {
-  position: absolute;
-  content: "";
+  @include pseudo(20px,2px);
   box-sizing: border-box;
-  width: 20px;
-  height: 2px;
-  background-color: black;
+  background-color: $black;
   bottom: 0;
   left: 0;
 }
@@ -45,8 +34,8 @@
   padding-bottom: 30px;
   padding-left: 75px;
   padding-right: 45px;
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-  color: $main-nav-link-color;
+  box-shadow: 0 1px 0 0 $gray, inset 0 1px 0 0 $gray;
+  color: $black;
   text-decoration: none;
   font-size: 17px;
   line-height: 1.41;

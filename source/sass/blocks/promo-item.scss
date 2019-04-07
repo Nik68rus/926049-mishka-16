@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .promo-item {
   padding: 30px;
 }
@@ -8,7 +10,7 @@
 
 .promo-item__type {
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $sea-foam-blue;
   font-size: 17px;
   line-height: 1.18;
   font-weight: 700;
@@ -37,7 +39,7 @@
 .promo-item__properties-param,
 .promo-item__properties-data {
   padding: 10px 0;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $gray;
 }
 
 .promo-item__picture {

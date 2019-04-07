@@ -18,18 +18,25 @@
 @import "../sass/blocks/page-heading.scss";
 @import "../sass/blocks/catalog.scss";
 @import "../sass/blocks/item.scss";
+@import "../sass/blocks/production.scss";
+@import "../sass/blocks/video.scss";
+@import "../sass/blocks/order-form.scss";
+@import "../sass/blocks/block-heading.scss";
+@import "../sass/blocks/label.scss";
+@import "../sass/blocks/radio.scss";
+@import "../sass/blocks/subject.scss";
 
 body {
-	margin: 0;
+  margin: 0;
   padding: 0;
   width: 322px;
-	font-family: $font, "Arial", sans-serif;
-	font-size: 15px;
-	line-height: 1.6;
-	font-weight: 400;
-	font-style: normal;
-	color: $font-color;
-	background-color: #ffffff;
+  font-family: $font-open-sans;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-style: normal;
+  color: $black-light;
+  background-color: #ffffff;
 }
 
 ul {

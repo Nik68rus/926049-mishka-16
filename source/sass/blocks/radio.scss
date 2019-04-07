@@ -1,0 +1,14 @@
+@import "../mixin.scss";
+@import "../variables.scss";
+
+.radio__label {
+  position: relative;
+  padding-left: 62px;
+}
+
+.radio__label::before {
+  @include pseudo(40px, 40px);
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid $black;
+}

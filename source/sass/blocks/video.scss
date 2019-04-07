@@ -1,0 +1,16 @@
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__play {
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  line-height: 0;
+  width: 101px;
+  height: 77px;
+  background-image: url("../../source/img/icon-play.svg");
+  cursor: pointer;
+}

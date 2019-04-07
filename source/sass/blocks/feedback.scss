@@ -1,3 +1,6 @@
+@import "../mixin.scss";
+@import "../variables.scss";
+
 .feedback {
   padding: 30px;
 }
@@ -18,7 +21,7 @@
   font-size: 17px;
   line-height: 1.41;
   font-weight: 700;
-  color: black;
+  color: $black;
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
@@ -42,25 +45,19 @@
   min-height: 52px;
   display: inline-block;
   font-size: 0;
-  border-color: #ececec;
+  border-color: $gray;
 }
 
 .feedback__nav-button::before {
-  position: absolute;
-  content: "";
-  width: 16px;
-  height: 16px;
+  @include pseudo(16px,16px);
   border-left: 4px solid black;
   border-bottom: 4px solid black;
   top: 16px;
 }
 
 .feedback__nav-button::after {
-  position: absolute;
-  content: "";
-  width: 45px;
-  height: 4px;
-  background-color: black;
+  @include pseudo(45px, 4px);
+  background-color: $black;
   left: 40px;
 }
 

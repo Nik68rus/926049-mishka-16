@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .social-list__item {
@@ -17,30 +18,5 @@
   position: relative;
   font-size: 0;
   line-height: 0;
-  padding-top: 30px;
-  padding-left: 30px;
   padding-bottom: 22px;
-}
-
-.social-list__link::before {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 30px;
-  top: 0;
-  left: 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.social-list__link--ig::before {
-  background-image: url("../../source/img/icon-insta.svg");
-}
-
-.social-list__link--fb::before {
-  background-image: url("../../source/img/icon-fb.svg");
-}
-
-.social-list__link--tw::before {
-  background-image: url("../../source/img/icon-twitter.svg");
 }
