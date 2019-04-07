@@ -1,0 +1,12 @@
+@import "../variables.scss";
+
+.page-heading {
+  background-color: $footer-bg;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  line-height: 1.11;
+  font-weight: 700;
+  padding: 74px 30px;
+  margin: 0;
+}

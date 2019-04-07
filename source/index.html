@@ -14,19 +14,19 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+            <li>
+              <a class="site-list__item main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a href="order.html">Вязание на заказ</a>
+            <li>
+              <a class="site-list__item main-nav__link" href="order.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__search" href="search.html">Поиск по сайту</a>
+            <li>
+              <a class="main-nav__link user-list__item user-list__item--search" href="search.html">Поиск по сайту</a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__cart" href="cart.html">Корзина: пока пуста</a>
+            <li>
+              <a class="main-nav__link user-list__item user-list__item--cart" href="cart.html">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -35,7 +35,9 @@
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин «Мишка»</h1>
       <section class="intro">
-        <h2 class="heading intro__heading">Милые штуки ручной работы для дома</h2>
+        <div class="intro__content">
+          <h2 class="heading intro__heading">Милые штуки ручной работы для дома</h2>
+        </div>
         <footer class="intro__footer">
           <ul class="category-list">
             <li>
@@ -52,17 +54,17 @@
         <p class="promo-item__type">Товар недели</p>
         <p class="promo-item__description">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках, и&nbsp;трех размерах.</p>
         <table class="promo-item__properties">
-          <tr>
-            <td>Цвет:</td>
-            <td>"Тиффани"/серый</td>
+          <tr class="promo-item__properties-line">
+            <td class="promo-item__properties-param">Цвет:</td>
+            <td class="promo-item__properties-data">"Тиффани"/серый</td>
           </tr>
-          <tr>
-            <td>Диаметр:</td>
-            <td>25 см</td>
+          <tr class="promo-item__properties-line">
+            <td class="promo-item__properties-param">Диаметр:</td>
+            <td class="promo-item__properties-data">25 см</td>
           </tr>
-          <tr>
-            <td>Высота:</td>
-            <td>15 см</td>
+          <tr class="promo-item__properties-line">
+            <td class="promo-item__properties-param">Высота:</td>
+            <td class="promo-item__properties-data">15 см</td>
           </tr>
         </table>
         <img class="promo-item__picture" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
@@ -85,25 +87,26 @@
         <p class="feedback__text">
           Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!
         </p>
-        <div class="author">
-          <p class="author__name">Анастасия Красильникова</p>
-          <p class="author__insta">@misssssiskras</p>
+        <div class="feedback__author">
+          <p class="feedback__author-name">Анастасия Красильникова</p>
+          <p class="feedback__author-insta">@misssssiskras</p>
         </div>
-        <div class="feedback__buttons">
-          <button class="feedback__button feedback__button--prev" type="button">Предыдущий отзыв</button>
-          <button class="feedback__button feedback__button--next" type="button">Слдующий отзыв</button>
+        <div class="feedback__nav-buttons">
+          <button class="button feedback__nav-button feedback__nav-button--prev" type="button">Предыдущий отзыв</button>
+          <button class="button feedback__nav-button feedback__nav-button--next" type="button">Следующий отзыв</button>
         </div>
         <button class="button feedback__write-button" type="button">Написать</button>
       </section>
       <section class="contacts">
+        <h2 class="heading contacts__heading">Контакты</h2>
         <table class="contacts__info">
           <tr>
-            <td>e-mail:</td>
-            <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            <td class="contacts__info-param">e-mail:</td>
+            <td class="contacts__info-data"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
           </tr>
           <tr>
-            <td>адрес:</td>
-            <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            <td class="contacts__info-param">адрес:</td>
+            <td class="contacts__info-data">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</td>
           </tr>
         </table>
         <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Магаин Мишка на карте">
@@ -113,13 +116,13 @@
     <footer class="page-footer">
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
-          <a href="#">Инстаграм</a>
+          <a class="social-list__link social-list__link--ig" href="#">Инстаграм</a>
         </li>
         <li class="social-list__item">
-          <a href="#">Фейсбук</a>
+          <a class="social-list__link social-list__link--fb" href="#">Фейсбук</a>
         </li>
         <li class="social-list__item">
-          <a href="#">Твиттер</a>
+          <a class="social-list__link social-list__link--tw" href="#">Твиттер</a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">

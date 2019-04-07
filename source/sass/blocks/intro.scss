@@ -1,0 +1,15 @@
+.intro {
+}
+
+.intro__content {
+  box-sizing: border-box;
+  background: url("../../source/img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top, center;
+  padding: 70px 30px;
+  min-height: 290px;
+}
+
+.intro__heading {
+  text-align: center;
+}

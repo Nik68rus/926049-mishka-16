@@ -1,1 +1,38 @@
-body { background: blue; }
+@import "../sass/variables.scss";
+@import "../sass/mixin.scss";
+@import "../sass/fonts.scss";
+@import "../sass/blocks/heading.scss";
+@import "../sass/blocks/intro.scss";
+@import "../sass/blocks/visually-hidden.scss";
+@import "../sass/blocks/category-list.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/promo-item.scss";
+@import "../sass/blocks/button.scss";
+@import "../sass/blocks/about-us.scss";
+@import "../sass/blocks/feedback.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/page-footer.scss";
+@import "../sass/blocks/social-list.scss";
+@import "../sass/blocks/copyright.scss";
+@import "../sass/blocks/page-heading.scss";
+@import "../sass/blocks/catalog.scss";
+@import "../sass/blocks/item.scss";
+
+body {
+	margin: 0;
+  padding: 0;
+  width: 322px;
+	font-family: $font, "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+	font-weight: 400;
+	font-style: normal;
+	color: $font-color;
+	background-color: #ffffff;
+}
+
+ul {
+  @include list-style();
+}
+

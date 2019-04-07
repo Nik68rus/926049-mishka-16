@@ -1,0 +1,60 @@
+.promo-item {
+  padding: 30px;
+}
+
+.promo-item__name {
+  margin-bottom: 5px;
+}
+
+.promo-item__type {
+  text-transform: uppercase;
+  color: #63d1bb;
+  font-size: 17px;
+  line-height: 1.18;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+}
+
+.promo-item__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.promo-item__properties {
+  box-sizing: border-box;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 28px;
+}
+
+.promo-item__properties-param {
+  width: 100px;
+}
+
+.promo-item__properties-param,
+.promo-item__properties-data {
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.promo-item__picture {
+  margin-bottom: 27px;
+}
+
+.promo-item__price {
+  font-size: 17px;
+  line-height: 1.41;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 26px;
+  width: 100%;
+  text-align: center;
+}
+
+.promo-item__button {
+  margin-bottom: 5px;
+}
