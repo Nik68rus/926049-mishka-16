@@ -1,0 +1,20 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.block-heading {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  color: $sea-foam-blue;
+  font-size: 17px;
+  line-height: 0.94;
+  font-weight: 700;
+}
+
+.block-heading::after {
+  @include pseudo(198px, 1px);
+  background-color: $sea-foam-blue;
+  right: 0;
+  top: 6px;
+}

@@ -1,0 +1,72 @@
+@import "../mixin.scss";
+@import "../variables.scss";
+
+.feedback {
+  padding: 30px;
+}
+
+.feedback__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.feedback__author {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.feedback__author-name {
+  font-size: 17px;
+  line-height: 1.41;
+  font-weight: 700;
+  color: $black;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.feedback__author-insta {
+  font-size: 17px;
+  line-height: 1.41;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback__nav-buttons {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.feedback__nav-button {
+  position: relative;
+  width: 50%;
+  min-height: 52px;
+  display: inline-block;
+  font-size: 0;
+  border-color: $gray;
+}
+
+.feedback__nav-button::before {
+  @include pseudo(16px,16px);
+  border-left: 4px solid black;
+  border-bottom: 4px solid black;
+  top: 16px;
+}
+
+.feedback__nav-button::after {
+  @include pseudo(45px, 4px);
+  background-color: $black;
+  left: 40px;
+}
+
+.feedback__nav-button--prev::before {
+  transform: rotate(45deg);
+  left: 40px;
+}
+
+.feedback__nav-button--next::before {
+  transform: rotate(-135deg);
+  right: 40px;
+}

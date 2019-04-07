@@ -1,0 +1,11 @@
+@import "../variables.scss";
+
+.page-footer {
+  padding: 20px 30px;
+  background-color: $gray;
+}
+
+.page-footer__social {
+  border-bottom: 1px solid $gray-dark;
+  margin-bottom: 22px;
+}

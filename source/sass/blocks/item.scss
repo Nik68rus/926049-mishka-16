@@ -1,0 +1,55 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.item {
+  border: 1px solid $gray;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 0;
+  padding-bottom: 28px;
+}
+
+.item__pic {
+  margin-left: -28px;
+  margin-bottom: 26px;
+}
+
+.item__name {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 1.41;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 15px;
+}
+
+.item__info {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $gray;
+  margin-bottom: 22px;
+  font-size: 13px;
+  line-height: 2.31;
+}
+
+.item__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__price {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.item__add-to-cart {
+  @include notext-button(21px,19px);
+  background-image: url("../img/icon-cart.svg");
+  opacity: 0.2;
+}

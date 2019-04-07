@@ -1,0 +1,16 @@
+@import "../variables.scss";
+
+.button {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 18px;
+  box-sizing: border-box;
+  border: 2px solid $black-light;
+  color: $black-light;
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 1.18;
+  font-weight: 700;
+  cursor: pointer;
+}
