@@ -1,0 +1,18 @@
+@import "../sass/mixin.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 322px;
+  font-family: $font-open-sans;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-style: normal;
+  color: $black-light;
+  background-color: #ffffff;
+}
+
+ul {
+  @include list-style();
+}

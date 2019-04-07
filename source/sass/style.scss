@@ -1,6 +1,7 @@
 @import "../sass/variables.scss";
 @import "../sass/mixin.scss";
 @import "../sass/fonts.scss";
+@import "../sass/base.scss";
 @import "../sass/blocks/heading.scss";
 @import "../sass/blocks/intro.scss";
 @import "../sass/blocks/visually-hidden.scss";
@@ -25,20 +26,3 @@
 @import "../sass/blocks/label.scss";
 @import "../sass/blocks/radio.scss";
 @import "../sass/blocks/subject.scss";
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 322px;
-  font-family: $font-open-sans;
-  font-size: 15px;
-  line-height: 1.6;
-  font-weight: 400;
-  font-style: normal;
-  color: $black-light;
-  background-color: #ffffff;
-}
-
-ul {
-  @include list-style();
-}
