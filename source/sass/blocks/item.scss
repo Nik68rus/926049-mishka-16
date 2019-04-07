@@ -50,6 +50,6 @@
 
 .item__add-to-cart {
   @include notext-button(21px,19px);
-  background-image: url("../../source/img/icon-cart.svg");
+  background-image: url("../img/icon-cart.svg");
   opacity: 0.2;
 }
