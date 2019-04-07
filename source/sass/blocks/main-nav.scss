@@ -2,8 +2,8 @@
 @import "../mixin.scss";
 
 .main-nav__toggle {
-  position: relative;
   @include notext-button(20px,2px);
+  position: relative;
   padding-top: 8px;
   padding-bottom: 6px;
 }
