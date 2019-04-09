@@ -1,7 +1,7 @@
 @import "../mixin.scss";
 @import "../variables.scss";
 
-.radio__label {
+.checkbox__label {
   display: block;
   position: relative;
   box-sizing: border-box;
@@ -10,18 +10,18 @@
   min-height: 40px;
 }
 
-.radio__label::before {
+.checkbox__label::before {
   @include pseudo(40px, 40px);
   top: 0;
   left: 0;
-  border-radius: 50%;
   border: 2px solid $black;
 }
 
-.radio__input:checked + .radio__label::after {
-  @include pseudo(16px, 16px);
-  top: 14px;
-  left: 14px;
-  border-radius: 50%;
-  background-color: #62d1ba;
+.checkbox__input:checked + .checkbox__label::after {
+  @include pseudo(20px, 10px);
+  top: 13px;
+  left: 13px;
+  border-left: 2px solid $black;
+  border-bottom: 2px solid $black;
+  transform: rotate(-45deg);
 }

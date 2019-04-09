@@ -47,13 +47,13 @@
                 <ul class="subject__type-list">
                   <li class="subject__type-item">
                     <label class="radio">
-                      <input class="visually-hidden" type="radio" name="type" value="interior" checked>
+                      <input class="visually-hidden radio__input" type="radio" name="type" value="interior" checked>
                       <span class="label radio__label">Аксесуары для интерьера</span>
                     </label>
                   </li>
                   <li class="subject__type-item">
                     <label class="radio">
-                      <input class="visually-hidden" type="radio" name="type" value="toy">
+                      <input class="visually-hidden radio__input" type="radio" name="type" value="toy">
                       <span class="label radio__label">Детская игрушка</span>
                     </label>
                   </li>
@@ -62,39 +62,39 @@
               <div class="subject__color">
                 <span class="block-heading subject__heading">Цвет</span>
                 <ul class="subject__color-list">
-                  <li>
+                  <li class="subect__color-item">
                     <label class="checkbox">
-                      <input class="visually-hidden" type="checkbox" name="white" checked>
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="white" checked>
                       <span class="label checkbox__label">Белый</span>
                     </label>
                   </li>
-                  <li>
+                  <li class="subect__color-item">
                     <label class="checkbox">
-                      <input class="visually-hidden" type="checkbox" name="gray" checked>
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="gray" checked>
                       <span class="label checkbox__label">Серый</span>
                     </label>
                   </li>
-                  <li>
+                  <li class="subect__color-item">
                     <label class="checkbox">
-                      <input class="visually-hidden" type="checkbox" name="tiffany">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="tiffany">
                       <span class="label checkbox__label">«Тиффани»</span>
                     </label>
                   </li>
-                  <li>
+                  <li class="subect__color-item">
                     <label class="checkbox">
-                      <input class="visually-hidden" type="checkbox" name="black">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="black">
                       <span class="label checkbox__label">Черный</span>
                     </label>
                   </li>
-                  <li>
+                  <li class="subect__color-item">
                     <label class="checkbox">
-                      <input class="visually-hidden" type="checkbox" name="pink">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="pink">
                       <span class="label checkbox__label">Розовый</span>
                     </label>
                   </li>
-                  <li>
+                  <li class="subect__color-item">
                     <label class="checkbox">
-                      <input class="visually-hidden" type="checkbox" name="orange">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="orange">
                       <span class="label checkbox__label">Оранжевый</span>
                     </label>
                   </li>
@@ -103,39 +103,39 @@
             </div>
             <div class="customer">
               <div class="customer__name">
-                <span class="block-heading">ФИО</span>
-                <label class="field">
-                  <span class="label field__label">Имя:</span>
+                <span class="customer__name-heading block-heading">ФИО</span>
+                <label class="field customer__field">
+                  <span class="label field__label customer__field-label">Имя:</span>
                   <input class="field__input" type="text" name="name" placeholder="Введите ваше имя*">
                 </label>
-                <label class="field">
-                  <span class="label field__label">Фамилия:</span>
+                <label class="field customer__field">
+                  <span class="label field__label customer__field-label">Фамилия:</span>
                   <input class="field__input" type="text" name="surname" placeholder="Укажите фамилию*">
                 </label>
-                <label class="field">
-                  <span class="label field__label">Отчество:</span>
+                <label class="field customer__field">
+                  <span class="label field__label customer__field-label">Отчество:</span>
                   <input class="field__input" type="text" name="middlename" placeholder="Отчество, если желаете">
                 </label>
               </div>
               <div class="customer__contacts">
-                <div class="phone">
+                <div class="customer__contact">
                   <label class="field">
-                    <span class="block-heading">Тел</span>
+                    <span class="customer__contacts-heading block-heading">Тел</span>
                     <input class="field__input" type="text" name="phone" placeholder="+7 XXX XXX XX XX*">
                   </label>
                 </div>
-                <div class="email">
+                <div class="customer__contact">
                   <label class="field">
-                    <span class="block-heading">E-mail</span>
+                    <span class="customer__contacts-heading block-heading">E-mail</span>
                     <input class="field__input" type="email" name="email" placeholder="Ваш Email*">
                   </label>
                 </div>
               </div>
             </div>
-            <div class="additional-info">
+            <div class="customer__additional-info">
               <label class="textarea">
-                <span class="block-heading">Доп</span>
-                <textarea class="textarea__input">Опишите все ваши пожелания к заказу</textarea>
+                <span class="customer__adinfo-heading block-heading">Доп</span>
+                <textarea class="textarea__input" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </label>
             </div>
             <p class="order-form__note">*Поля обязательны для заполнения</p>
