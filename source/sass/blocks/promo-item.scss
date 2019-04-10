@@ -60,3 +60,36 @@
 .promo-item__button {
   margin-bottom: 5px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo-item__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promo-item__data {
+    position: relative;
+    padding-right: 378px;
+  }
+
+  .promo-item__picture {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-item__heading {
+    justify-content: flex-start;
+  }
+
+  .promo-item__type {
+    order: -1;
+  }
+
+  .promo-item__data {
+    padding-left: 175px;
+    padding-right: 582px;
+  }
+}

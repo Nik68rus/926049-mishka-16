@@ -41,3 +41,52 @@
   line-height: 1.41;
   font-weight: 700;
 }
+
+.main-nav__link--promo {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 700;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__link {
+    box-shadow: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list--site-list {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link--promo {
+    display: block;
+  }
+
+  .main-nav__list--site-list {
+    position: static;
+  }
+
+  .main-nav__list--promo-list {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+

@@ -70,3 +70,33 @@
   transform: rotate(-135deg);
   right: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    padding-top: 80px;
+    position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  .feedback__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedback__nav-buttons {
+    width: 260px;
+  }
+
+  .feedback__nav-button {
+    border-color: transparent;
+  }
+
+  .feedback__write-button {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    width: 175px;
+  }
+}

@@ -10,3 +10,19 @@
 .intro__heading {
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .intro__content {
+    background: url("../img/hero-tablet@1x.jpg");
+    background-position: top, -100px;
+    min-height: 745px;
+    padding: 160px 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__content {
+    background: url("../img/hero-desktop@1x.jpg");
+    min-height: 750px;
+  }
+}

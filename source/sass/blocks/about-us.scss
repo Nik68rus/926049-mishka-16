@@ -13,3 +13,28 @@
 .about-us__item:last-of-type {
   margin-bottom: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding-left: 0;
+  }
+
+  .about-us__wrapper {
+    display: flex;
+  }
+
+  .about-us__list {
+    width: 350px;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-left: 175px;
+  }
+}
