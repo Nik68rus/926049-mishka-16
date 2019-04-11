@@ -4,6 +4,36 @@
 }
 
 .page-header__logo {
-  position: relative;
-  left: calc(50% - 43px);
+  display: block;
+  text-align: center;
+}
+
+.page-header__info {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__info {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    position: absolute;
+    left: calc(50% - 75px);
+  }
 }

@@ -9,3 +9,18 @@
   border-bottom: 1px solid $gray-dark;
   margin-bottom: 22px;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

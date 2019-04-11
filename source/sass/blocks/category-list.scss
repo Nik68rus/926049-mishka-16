@@ -20,3 +20,25 @@
 .category-list__item--toys {
   background-color: $cat-dark;
 }
+
+@media (min-width: $tablet-width) {
+  .category-list {
+    display: flex;
+  }
+
+  .category-list li {
+    width: 100%;
+  }
+
+  .category-list__item {
+    padding-right: 170px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category-list__item {
+    padding-right: 360px;
+  }
+}

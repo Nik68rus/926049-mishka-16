@@ -9,3 +9,15 @@
 .catalog__item {
   margin-bottom: 30px;
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    box-sizing: border-box;
+    width: 315px;
+  }
+}

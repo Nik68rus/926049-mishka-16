@@ -53,3 +53,30 @@
   background-image: url("../img/icon-cart.svg");
   opacity: 0.2;
 }
+
+@media (min-width: $tablet-width) {
+  .item {
+    display: flex;
+  }
+
+  .item__pic,
+  .item__data {
+    width: 50%;
+  }
+
+
+  .item__data {
+    padding: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item {
+    display: block;
+  }
+
+  .item__pic,
+  .item__data {
+    width: 100%;
+  }
+}
