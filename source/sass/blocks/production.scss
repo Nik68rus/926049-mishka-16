@@ -30,10 +30,39 @@
   width: 260px;
   height: 150px;
   background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
 }
 
 .production__text {
   margin: 0;
   padding: 0;
   margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .production__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__video {
+    order: -1;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__wrapper {
+    display: block;
+    position: relative;
+    padding-left: 760px;
+  }
+
+  .production__video {
+    position: absolute;
+    margin-left: 0;
+    width: 685px;
+    top: 0;
+    left: 0;
+  }
 }
