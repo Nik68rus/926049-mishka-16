@@ -7,3 +7,17 @@
   font-size: 17px;
   line-height: 1.06;
 }
+
+@media (min-width: $tablet-width) {
+  .field {
+    display: flex;
+  }
+
+  .field__input {
+    width: 100%;
+  }
+
+  .field__input--dark {
+    background-color: $gray;
+  }
+}

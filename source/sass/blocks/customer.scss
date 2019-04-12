@@ -27,3 +27,21 @@
 .customer__additional-info {
   margin-bottom: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .customer__name {
+    display: flex;
+  }
+
+  .customer__name-wrapper {
+    width: 100%;
+  }
+
+  .customer__field {
+    display: flex;
+  }
+
+  .customer__contacts {
+    background-color: $gray;
+  }
+}

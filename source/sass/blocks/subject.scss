@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .subject__heading {
   margin-bottom: 25px;
 }
@@ -8,4 +10,31 @@
 
 .subect__color-item {
   margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .subject__type {
+    display: flex;
+  }
+
+  .subject__color {
+    background-color: $gray;
+    display: flex;
+  }
+
+  .subject__color-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 501px;
+  }
+
+  .subect__color-item {
+    width: 240px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subject__color-list {
+    width: 745px;
+  }
 }

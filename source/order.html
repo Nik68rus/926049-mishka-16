@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -114,30 +115,32 @@
               <div class="customer">
                 <div class="customer__name">
                   <span class="customer__name-heading block-heading">ФИО</span>
-                  <label class="field customer__field">
-                    <span class="label field__label customer__field-label">Имя:</span>
-                    <input class="field__input" type="text" name="name" placeholder="Введите ваше имя*">
-                  </label>
-                  <label class="field customer__field">
-                    <span class="label field__label customer__field-label">Фамилия:</span>
-                    <input class="field__input" type="text" name="surname" placeholder="Укажите фамилию*">
-                  </label>
-                  <label class="field customer__field">
-                    <span class="label field__label customer__field-label">Отчество:</span>
-                    <input class="field__input" type="text" name="middlename" placeholder="Отчество, если желаете">
-                  </label>
+                  <div class="customer__name-wrapper">
+                    <label class="field customer__field">
+                      <span class="label field__label customer__field-label">Имя:</span>
+                      <input class="field__input" type="text" name="name" placeholder="Введите ваше имя*">
+                    </label>
+                    <label class="field customer__field">
+                      <span class="label field__label customer__field-label">Фамилия:</span>
+                      <input class="field__input" type="text" name="surname" placeholder="Укажите фамилию*">
+                    </label>
+                    <label class="field customer__field">
+                      <span class="label field__label customer__field-label">Отчество:</span>
+                      <input class="field__input" type="text" name="middlename" placeholder="Отчество, если желаете">
+                    </label>
+                  </div>
                 </div>
                 <div class="customer__contacts">
                   <div class="customer__contact">
                     <label class="field">
                       <span class="customer__contacts-heading block-heading">Тел</span>
-                      <input class="field__input" type="text" name="phone" placeholder="+7 XXX XXX XX XX*">
+                      <input class="field__input field__input--dark" type="text" name="phone" placeholder="+7 XXX XXX XX XX*">
                     </label>
                   </div>
                   <div class="customer__contact">
                     <label class="field">
                       <span class="customer__contacts-heading block-heading">E-mail</span>
-                      <input class="field__input" type="email" name="email" placeholder="Ваш Email*">
+                      <input class="field__input field__input--dark" type="email" name="email" placeholder="Ваш Email*">
                     </label>
                   </div>
                 </div>
@@ -148,9 +151,11 @@
                   <textarea class="textarea__input" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </label>
               </div>
-              <p class="order-form__note">*Поля обязательны для заполнения</p>
             </div>
-            <button class="button order-form__button" type="submit">Отправить заказ</button>
+            <div class="order-form__wrapper">
+              <p class="order-form__note">*Поля обязательны для заполнения</p>
+              <button class="button order-form__button" type="submit">Отправить заказ</button>
+            </div>
           </form>
         </section>
       </main>

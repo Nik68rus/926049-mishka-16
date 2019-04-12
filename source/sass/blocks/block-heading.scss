@@ -18,3 +18,13 @@
   right: 0;
   top: 6px;
 }
+
+@media (min-width: $tablet-width) {
+  .block-heading {
+    width: 167px;
+  }
+
+  .block-heading::after {
+    background-color: transparent;
+  }
+}
