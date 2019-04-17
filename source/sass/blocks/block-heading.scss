@@ -12,11 +12,17 @@
   font-weight: 700;
 }
 
+.block-heading__text-wrapper {
+  padding-right: 30px;
+  background-color: white;
+}
+
 .block-heading::after {
-  @include pseudo(198px, 1px);
+  @include pseudo(100%, 1px);
   background-color: $sea-foam-blue;
   right: 0;
   top: 6px;
+  z-index: -1;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,5 +32,9 @@
 
   .block-heading::after {
     background-color: transparent;
+  }
+
+  .block-heading__text-wrapper {
+    background-color: inherit;
   }
 }

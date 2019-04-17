@@ -4,8 +4,10 @@
   padding-bottom: 15px;
   border: none;
   border-bottom: 2px solid $black;
+  font-family: inherit;
   font-size: 17px;
   line-height: 1.06;
+  background-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,9 +17,5 @@
 
   .field__input {
     width: 100%;
-  }
-
-  .field__input--dark {
-    background-color: $gray;
   }
 }

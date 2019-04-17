@@ -1,9 +1,17 @@
 @import "../variables.scss";
 @import "../mixin.scss";
 
+.main-nav {
+  position: relative;
+}
+
 .main-nav__toggle {
   @include notext-button(20px,2px);
-  position: relative;
+  position: absolute;
+  right: 33px;
+  top: -50px;
+  z-index: 2;
+  display: block;
   padding-top: 8px;
   padding-bottom: 6px;
 }
@@ -26,12 +34,17 @@
   left: 0;
 }
 
+.main-nav__wrapper {
+ // display: none;
+}
+
 .main-nav__link {
+  position: relative;
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   padding-left: 75px;
   padding-right: 45px;
   box-shadow: 0 1px 0 0 $gray, inset 0 1px 0 0 $gray;
@@ -40,6 +53,48 @@
   font-size: 17px;
   line-height: 1.41;
   font-weight: 700;
+
+  &:hover {
+    color: rgba(0,0,0,0.6);
+  }
+
+  &:active {
+    color: rgba(0,0,0,0.3);
+  }
+}
+
+.main-nav__link--search::before {
+  @include pseudo(22px,22px);
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  left: 34px;
+  top: 32px;
+  opacity: 0.2;
+}
+
+.main-nav__link--search:hover::before {
+  opacity: 1;
+}
+
+.main-nav__link--search:active::before {
+  opacity: 0.3;
+}
+
+.main-nav__link--cart::before {
+  @include pseudo(22px,22px);
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  left: 33px;
+  top: 30px;
+  opacity: 0.2;
+}
+
+.main-nav__link--cart:hover::before {
+  opacity: 1;
+}
+
+.main-nav__link--cart:active::before {
+  opacity: 0.3;
 }
 
 .main-nav__link--promo {
@@ -58,13 +113,18 @@
     box-shadow: none;
   }
 
+  .main-nav__link--search {
+    font-size: 0;
+    line-height: 0;
+  }
+
   .main-nav__toggle {
     display: none;
   }
 
   .main-nav__list--site-list {
     position: absolute;
-    left: 0;
+    left: -400px;
     bottom: -50px;
   }
 }
