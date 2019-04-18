@@ -1,16 +1,47 @@
 @import "../sass/variables.scss";
 
 .category-list__item {
+  position: relative;
   display: block;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 30px;
   padding-right: 160px;
-  padding-left: 30px;
+  padding-left: 28px;
   font-size: 19px;
   line-height: 1.26;
   font-weight: 700;
   text-decoration: none;
   color: white;
+
+  &:active {
+    color: rgba(255,255,255,0.3);
+  }
+}
+
+.category-list__item::after {
+  @include pseudo(60px,63px);
+  right: 30px;
+  top: 23px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.5;
+}
+
+.category-list__item:hover::after {
+  opacity: 0.7;
+}
+
+.category-list__item:active::after {
+  opacity: 0.3;
+}
+
+.category-list__item--interior::after {
+  background-image: url("../img/icon-interior.svg");
+}
+
+.category-list__item--toys::after {
+  background-image: url("../img/icon-toy.svg");
+  top: 19px;
 }
 
 .category-list__item--interior {
@@ -32,8 +63,19 @@
 
   .category-list__item {
     padding-right: 170px;
+    padding-left: 35px;
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  .category-list__item--interior::after {
+    top: 30px;
+    right: 25px;
+  }
+
+  .category-list__item--toys::after {
+    top: 30px;
+    right: 34px;
   }
 }
 
