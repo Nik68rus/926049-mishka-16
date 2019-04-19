@@ -3,15 +3,19 @@
 
 .item {
   border: 1px solid $gray;
-  padding-left: 28px;
-  padding-right: 28px;
-  padding-top: 0;
-  padding-bottom: 28px;
+  padding: 0;
 }
 
 .item__pic {
-  margin-left: -28px;
-  margin-bottom: 26px;
+  box-sizing: border-box;
+}
+
+.item__data {
+  box-sizing: border-box;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 23px;
+  padding-bottom: 27px;
 }
 
 .item__name {
@@ -22,22 +26,25 @@
   line-height: 1.41;
   font-weight: 700;
   color: $black;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .item__info {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
-  border-bottom: 1px solid $gray;
-  margin-bottom: 22px;
   font-size: 13px;
   line-height: 2.31;
+}
+
+.item__description {
+  margin-bottom: 20px;
 }
 
 .item__price-wrapper {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid $gray;
+  padding-top: 20px;
 }
 
 .item__price {
@@ -64,8 +71,37 @@
     width: 50%;
   }
 
+/*-----------------------------------временно-----------------------------*/
+
+  .item__pic {
+    height: 333px;
+  }
+
+/*-------------------------------------------------------------------------*/
+
+  .item__name {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .item__info {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .item__price {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+
+  .item__price-wrapper {
+    padding-top: 24px;
+  }
 
   .item__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 26px;
   }
 }
@@ -75,8 +111,25 @@
     display: block;
   }
 
+  /*-----------------------------------временно-----------------------------*/
+
+.item__pic {
+  height: 462px;
+}
+
+/*-------------------------------------------------------------------------*/
+
   .item__pic,
   .item__data {
     width: 100%;
   }
+
+  .item__data {
+    padding-top: 18px;
+  }
+
+  .item__description {
+    margin-bottom: 13px;
+  }
+
 }

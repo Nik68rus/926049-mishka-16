@@ -1,7 +1,11 @@
 @import "../variables.scss";
+@import "../mixin.scss";
 
 .promo-item {
-  padding: 27px 30px;
+  @include container();
+  padding-top: 27px;
+  padding-bottom: 40px;
+  position: relative;
 }
 
 .promo-item__name {
@@ -57,13 +61,23 @@
   text-align: center;
 }
 
-.promo-item__button {
-  margin-bottom: 5px;
+.promo-item::after {
+  @include pseudo(100%, 23px);
+  max-width: 1050px;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
+
 
 @media (min-width: $tablet-width) {
   .promo-item {
-    padding: 36px 46px;
+    padding: 30px 46px;
+    padding-bottom: 70px;
   }
 
   .promo-item__heading {
@@ -118,6 +132,11 @@
 @media (min-width: $desktop-width) {
   .promo-item {
     padding-top: 126px;
+    padding-bottom: 95px;
+  }
+
+  .promo-item::after {
+    left: 50px;
   }
 
   .promo-item__heading {
@@ -134,7 +153,7 @@
 
   .promo-item__data {
     padding-left: 179px;
-    padding-right: 582px;
+    padding-right: 587px;
   }
 
   .promo-item__description {

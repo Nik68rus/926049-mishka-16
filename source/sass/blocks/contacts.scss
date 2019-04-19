@@ -1,14 +1,20 @@
+@import "../mixin.scss";
+
 .contacts {
-  padding: 30px;
+  @include container();
+  padding-top: 37px;
+  padding-bottom: 37px;
 }
 
 .contacts__heading {
   font-size: 18px;
   line-height: 1.67;
+  margin-bottom: 16px;
 }
 
 .contacts__info {
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .contacts__info-param {
@@ -20,18 +26,28 @@
   box-sizing: border-box;
   vertical-align: baseline;
   padding-top: 8px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  line-height: 2;
 }
 
 .contacts__map {
   margin-left: -30px;
-  margin-bottom: 39px;
+  margin-right: -30px;
+  margin-bottom: 35px;
+  max-width: inherit;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 62px;
+    padding-bottom: 56px;
+    position: relative;
+  }
+
   .contacts__heading {
     font-size: 43px;
     line-height: 1.16;
+    margin-bottom: 36px;
   }
 
   .contacts__info tbody {
@@ -42,26 +58,78 @@
     width: 330px;
   }
 
+  .contacts__info-param,
+  .contacts__info-data {
+    font-size: 17px;
+    line-height: 1.83;
+  }
+
+  .contacts__info {
+    margin-bottom: 30px;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-bottom: 49px;
+  }
+
   .contacts__button {
     width: 230px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contacts::after {
+    @include pseudo(47px,82px);
+    top: 47px;
+    right: 52px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-left: 175px;
-    padding-right: 555px;
-    position: relative;
+    padding-top: 143px;
+    padding-left: 219px;
+    padding-right: 590px;
+    padding-bottom: 105px;
     min-height: 457px;
   }
 
+  .contacts__heading {
+    font-size: 53px;
+    line-height: 1.08;
+    margin-bottom: 36px;
+  }
+
+  .contacts__info {
+    margin-bottom: 51px;
+  }
+
+  .contacts__button {
+    margin: 0;
+    margin-left: 6px;
+  }
+
   .contacts__map {
+    width: 525px;
+    height: 455px;
     position: absolute;
-    top: 0;
-    right: 0;
+    margin: 0;
+    top: 74px;
+    right: 50px;
   }
 
   .contacts__info tbody {
     display: table;
+  }
+
+  .contacts::after {
+    left: 113px;
+    top: 135px;
   }
 }

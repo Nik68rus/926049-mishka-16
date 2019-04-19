@@ -1,4 +1,7 @@
+@import "../mixin.scss";
+
 .page-header {
+  @include container();
   padding-top: 20px;
 }
 
