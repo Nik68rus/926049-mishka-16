@@ -19,3 +19,11 @@
   font-size: 0;
   line-height: 0;
 }
+
+.social-list__link:hover path {
+  fill: #46c1ae;
+}
+
+.social-list__link:active svg {
+  opacity: 0.3;
+}

@@ -30,6 +30,18 @@
   line-height: 2;
 }
 
+.contacts__info-data a {
+  color: #444444;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+  }
+}
+
 .contacts__map {
   margin-left: -30px;
   margin-right: -30px;

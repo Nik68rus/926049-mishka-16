@@ -15,7 +15,15 @@
   top: 0;
   left: 0;
   border-radius: 50%;
-  border: 2px solid $black;
+  border: 2px solid $black-light;
+}
+
+.radio__label:hover::before {
+  border-color: #62d1ba;
+}
+
+.radio__label:active::before {
+  opacity: 0.3;
 }
 
 .radio__input:checked + .radio__label::after {

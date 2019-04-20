@@ -14,15 +14,23 @@
   @include pseudo(35px, 35px);
   top: 0;
   left: 0;
-  border: 2px solid $black;
+  border: 2px solid $black-light;
+}
+
+.checkbox__label:hover::before {
+  border-color: #62d1ba;
+}
+
+.checkbox__label:active::before {
+  opacity: 0.3;
 }
 
 .checkbox__input:checked + .checkbox__label::after {
   @include pseudo(18px, 8px);
   top: 12px;
   left: 10px;
-  border-left: 2px solid $black;
-  border-bottom: 2px solid $black;
+  border-left: 2px solid $black-light;
+  border-bottom: 2px solid $black-light;
   transform: rotate(-45deg);
 }
 

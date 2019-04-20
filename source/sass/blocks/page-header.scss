@@ -36,6 +36,14 @@
   .page-header__logo {
     padding-top: 20px;
     padding-bottom: 20px;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
   }
 
   .page-header__logo img {

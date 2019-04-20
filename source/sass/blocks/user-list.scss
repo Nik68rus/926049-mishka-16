@@ -27,6 +27,15 @@
 
 .user-list__link-icon {
   margin-right: 24px;
+  opacity: 0.2;
+}
+
+.user-list__link:hover .user-list__link-icon {
+  opacity: 1;
+}
+
+.user-list__link:active .user-list__link-icon {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

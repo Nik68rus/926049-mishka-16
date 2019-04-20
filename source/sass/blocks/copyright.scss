@@ -9,9 +9,21 @@
   line-height: 0.95;
   font-weight: 700;
   margin-right: 30px;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .copyright__link {
   font-size: 0;
   line-height: 0;
+}
+
+.copyright__link:hover path {
+  fill: #46c1ae;
+}
+
+.copyright__link:active svg {
+  opacity: 0.3;
 }
