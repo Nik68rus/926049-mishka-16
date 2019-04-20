@@ -11,27 +11,11 @@ body {
   font-style: normal;
   color: $black-light;
   background-color: #ffffff;
-//  width: $mobile-width;
 }
 
 ul {
   @include list-style();
 }
-/*
-@media (min-width: $tablet-width) {
-  body {
-    width: $tablet-width;
-    padding: 0 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    width: $desktop-width;
-    padding: 0 50px;
-  }
-}
-*/
 
 img {
   max-width: 100%;
