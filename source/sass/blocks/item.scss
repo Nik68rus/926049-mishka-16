@@ -108,7 +108,8 @@
 
 @media (min-width: $desktop-width) {
   .item {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   /*-----------------------------------временно-----------------------------*/
@@ -125,7 +126,8 @@
   }
 
   .item__data {
-    padding-top: 18px;
+    flex-grow: 1;
+    padding-top: 24px;
   }
 
   .item__description {

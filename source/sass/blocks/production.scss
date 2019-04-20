@@ -1,16 +1,16 @@
 @import "../variables.scss";
+@import "../mixin.scss";
 
 .production {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 0;
-  padding-bottom: 0;
+  @include container();
+  padding-top: 16px;
+  padding-bottom: 58px;
 }
 
 .production__wrapper {
   border: 1px solid $gray;
-  padding: 28px;
-  margin-bottom: 58px;
+  padding: 24px 33px;
+  padding-bottom: 30px;
 }
 
 .production__heading {
@@ -19,14 +19,22 @@
   font-weight: 700;
   padding: 0;
   margin: 0;
-  padding-left: 62px;
+  padding-left: 57px;
   margin-bottom: 25px;
   color: $black;
+  position: relative;
+}
+
+.production__heading::before {
+  @include pseudo(32px,32px);
+  left: 0;
+  top: 5px;
+  background-image: url("../img/icon-video.svg");
 }
 
 .production__video {
-  margin-left: -28px;
-  margin-bottom: 32px;
+  margin-left: -33px;
+  margin-bottom: 26px;
   width: 260px;
   height: 150px;
   background-image: url("../img/video-mobile@1x.jpg");
@@ -36,32 +44,85 @@
 .production__text {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 1.85;
 }
 
 @media (min-width: $tablet-width) {
+  .production {
+    padding-top: 37px;
+    padding-bottom: 64px;
+  }
+
   .production__wrapper {
     display: flex;
     flex-direction: column;
+    padding: 24px 41px;
+    padding-bottom: 44px;
+  }
+
+  .production__heading {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 65px;
+    margin-bottom: 32px;
+  }
+
+  .production__heading::before {
+    top: -5px;
   }
 
   .production__video {
     order: -1;
-    width: 100%;
+    width: 668px;
+    height: 455px;
+    background-image: url("../img/video-tablet@1x.jpg");
+    margin-left: -41px;
+    margin-right: -41px;
+    margin-top: -24px;
+    margin-bottom: 38px;
+  }
+
+  .production__text {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 34px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .production {
+    padding-top: 42px;
+    padding-bottom: 107px;
+  }
+
   .production__wrapper {
     display: block;
     position: relative;
     padding-left: 760px;
+    padding-right: 57px;
+    padding-top: 45px;
+    min-height: 455px;
+    box-sizing: border-box;
+  }
+
+  .production__heading {
+    padding-left: 0;
+    padding-top: 50px;
+  }
+
+  .production__text {
+    margin-bottom: 46px;
   }
 
   .production__video {
     position: absolute;
     margin-left: 0;
-    width: 685px;
+    margin-top: 0;
+    width: 682px;
+    height: 455px;
+    background-image: url("../img/video-desktop@1x.jpg");
     top: 0;
     left: 0;
   }

@@ -16,4 +16,11 @@
   .textarea {
     display: flex;
   }
+
+  .textarea__input {
+    width: auto;
+    flex-grow: 1;
+    font-size: 19px;
+    line-height: 0.95;
+  }
 }
