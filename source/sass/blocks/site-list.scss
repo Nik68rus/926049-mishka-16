@@ -16,11 +16,11 @@
   line-height: 1.41;
   font-weight: 700;
 
-  &:hover {
+  &[href]:hover {
     color: rgba(0, 0, 0, 0.6);
   }
 
-  &:active {
+  &[href]:active {
     color: rgba(0, 0, 0, 0.3);
   }
 }
