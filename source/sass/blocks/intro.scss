@@ -20,18 +20,19 @@
 @media (min-width: $tablet-width) {
   .intro__wrapper {
     @include container();
+    min-height: 744px;
+    position: relative;
   }
 
   .intro {
     background: url("../img/hero-tablet@1x.jpg");
     background-size: cover;
     background-position: center -5px;
-    min-height: 750px;
   }
 
   .intro::after {
     @include pseudo(100%, 34px);
-    bottom: -5px;
+    bottom: -11px;
     left: 0;
     background-color: transparent;
     background-image: url("../img/bg-zigzag-fill.svg");

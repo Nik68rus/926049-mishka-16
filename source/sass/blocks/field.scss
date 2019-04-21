@@ -45,6 +45,13 @@
   background-image: url("../img/icon-mail.svg");
 }
 
+@media (max-width: $mobile-width-only) {
+  .field__input {
+    display: block;
+    width: 100%;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .field {
     display: flex;

@@ -58,13 +58,15 @@
 
 @media (min-width: $desktop-width) {
   .order-form {
-    padding-top: 108px;
-    padding-bottom: 45px;
+    padding-top: 124px;
+    padding-bottom: 50px;
   }
 
   .order-form__description {
     padding-left: 225px;
     padding-right: 200px;
+    margin: 0 auto;
+    margin-bottom: 58px;
   }
 
   .order-form__wrapper {

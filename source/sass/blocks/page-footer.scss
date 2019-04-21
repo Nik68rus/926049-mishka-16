@@ -2,10 +2,14 @@
 @import "../mixin.scss";
 
 .page-footer {
+  background-color: $gray;
+}
+
+
+.page-footer__wrapper {
   @include container();
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: $gray;
 }
 
 .page-footer__social {
@@ -37,7 +41,7 @@
     opacity: 0.3;
   }
 
-  .page-footer {
+  .page-footer__wrapper {
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;

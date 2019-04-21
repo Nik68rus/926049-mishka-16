@@ -52,7 +52,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 62px;
-    padding-bottom: 56px;
+    padding-bottom: 58px;
     position: relative;
   }
 
@@ -67,17 +67,19 @@
   }
 
   .contacts__info-row {
-    width: 330px;
+    display: block;
+    width: 50%;
   }
 
   .contacts__info-param,
   .contacts__info-data {
     font-size: 17px;
     line-height: 1.83;
+    padding-bottom: 16px;
   }
 
   .contacts__info {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   .contacts__map {
@@ -115,11 +117,15 @@
   .contacts__heading {
     font-size: 53px;
     line-height: 1.08;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 
   .contacts__info {
-    margin-bottom: 51px;
+    margin-bottom: 54px;
+  }
+
+  .contacts__info-row {
+    width: 100%;
   }
 
   .contacts__button {

@@ -40,6 +40,10 @@
   .page-heading {
     font-size: 53px;
     line-height: 1.08;
-    padding-bottom: 114px;
+    padding-bottom: 100px;
+  }
+
+  .page-heading::after {
+    bottom: -20px;
   }
 }
