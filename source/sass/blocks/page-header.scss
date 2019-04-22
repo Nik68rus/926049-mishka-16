@@ -64,7 +64,8 @@
 @media (min-width: $desktop-width) {
   .page-header__logo {
     position: absolute;
-    left: calc(50% - 75px);
+    top: -12px;
+    left: calc(50% - 77px);
     z-index: 5;
   }
 

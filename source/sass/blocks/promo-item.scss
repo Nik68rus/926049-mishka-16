@@ -2,10 +2,13 @@
 @import "../mixin.scss";
 
 .promo-item {
+  position: relative;
+}
+
+.promo-item__wrapper {
   @include container();
   padding-top: 27px;
   padding-bottom: 40px;
-  position: relative;
 }
 
 .promo-item__name {
@@ -51,6 +54,8 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .promo-item__price {
@@ -65,23 +70,26 @@
 }
 
 .promo-item::after {
-  @include pseudo(100%, 23px);
+  @include pseudo(100%, 6px);
   bottom: 0;
   left: 0;
   background-color: transparent;
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: contain;
-  background-repeat: no-repeat;
   background-position: bottom center;
 }
 
 
 @media (min-width: $tablet-width) {
-  .promo-item {
+  .promo-item__wrapper {
     padding-left: 46px;
     padding-right: 46px;
     padding-top: 37px;
     padding-bottom: 70px;
+  }
+
+  .promo-item::after {
+    height: 15px;
   }
 
   .promo-item__heading {
@@ -134,9 +142,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo-item {
+  .promo-item__wrapper {
     padding-top: 126px;
     padding-bottom: 95px;
+  }
+
+  .promo-item::after {
+    height: 23px;
   }
 
   .promo-item__heading {
