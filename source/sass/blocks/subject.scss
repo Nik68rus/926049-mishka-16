@@ -1,40 +1,79 @@
 @import "../variables.scss";
+@import "../mixin.scss";
 
 .subject__heading {
   margin-bottom: 25px;
 }
 
+.subject__type {
+  @include container();
+  padding-bottom: 32px;
+}
+
 .subject__type-item {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+}
+
+.subject__type-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.subject__color {
+  @include container();
+  padding-bottom: 10px;
 }
 
 .subect__color-item {
-  margin-bottom: 22px;
+  box-sizing: border-box;
+  margin-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .subject__type {
     display: flex;
+    padding-bottom: 50px;
+  }
+
+  .subject__type-item {
+    margin-bottom: 25px;
   }
 
   .subject__color {
-    background-color: $gray;
+    padding-top: 50px;
+    padding-bottom: 26px;
     display: flex;
   }
 
   .subject__color-list {
     display: flex;
     flex-wrap: wrap;
-    width: 501px;
+    width: 75%;
   }
 
   .subect__color-item {
-    width: 240px;
+    width: calc(50% - 27px);
+    margin-right: 27px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .subject__color-item:nth-of-type(2n) {
+    margin-right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .subject__color-list {
     width: 745px;
+  }
+
+  .subect__color-item {
+    width: 215px;
+    margin-right: 48px;
+  }
+
+  .subect__color-item:nth-of-type(3n) {
+    margin-right: 0;
   }
 }

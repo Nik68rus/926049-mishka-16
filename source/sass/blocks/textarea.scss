@@ -6,12 +6,26 @@
   box-sizing: border-box;
   border: 2px solid $black;
   padding: 15px;
+  font-family: inherit;
   font-size: 17px;
   line-height: 1.06;
+  resize: none;
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .textarea {
     display: flex;
+  }
+
+  .textarea__input {
+    width: auto;
+    flex-grow: 1;
+    font-size: 19px;
+    line-height: 0.95;
   }
 }

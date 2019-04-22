@@ -3,15 +3,11 @@
 
 .item {
   border: 1px solid $gray;
-  padding-left: 28px;
-  padding-right: 28px;
-  padding-top: 0;
-  padding-bottom: 28px;
+  padding: 0;
 }
 
-.item__pic {
-  margin-left: -28px;
-  margin-bottom: 26px;
+.item__description a {
+  text-decoration: none;
 }
 
 .item__name {
@@ -22,22 +18,65 @@
   line-height: 1.41;
   font-weight: 700;
   color: $black;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.item__pic {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 6px;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.item__pic img {
+  display: block;
+  margin: 0 auto;
+}
+
+.item__data {
+  box-sizing: border-box;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 23px;
+  padding-bottom: 27px;
+
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .item__info {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
-  border-bottom: 1px solid $gray;
-  margin-bottom: 22px;
   font-size: 13px;
   line-height: 2.31;
+}
+
+.item__description {
+  margin-bottom: 20px;
 }
 
 .item__price-wrapper {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid $gray;
+  padding-top: 20px;
 }
 
 .item__price {
@@ -59,24 +98,74 @@
     display: flex;
   }
 
-  .item__pic,
   .item__data {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 26px;
+  }
+
+  .item__pic {
+    margin-bottom: 0;
     width: 50%;
   }
 
+  /*-----------------------------------временно-----------------------------*/
 
-  .item__data {
-    padding: 26px;
+  .item__pic img {
+    height: 334px;
+    width: 100%;
+  }
+
+  /*-------------------------------------------------------------------------*/
+
+  .item__name {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .item__info {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .item__price {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+
+  .item__price-wrapper {
+    padding-top: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .item {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
+
+  /*-----------------------------------временно-----------------------------*/
+
+  .item__pic img {
+    height: 462px;
+    width: 100%;
+  }
+
+  /*-------------------------------------------------------------------------*/
 
   .item__pic,
   .item__data {
     width: 100%;
+  }
+
+  .item__data {
+    flex-grow: 1;
+    padding-top: 24px;
+  }
+
+  .item__description {
+    margin-bottom: 13px;
   }
 }

@@ -1,11 +1,19 @@
+@import "../mixin.scss";
+
 .page-header {
+  @include container();
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .page-header__logo {
   display: block;
   text-align: center;
+  padding-bottom: 16px;
+}
+
+.page-header__logo img {
+  width: 86px;
+  height: 36px;
 }
 
 .page-header__info {
@@ -21,13 +29,35 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: inset 0 -1px 0 0 $gray;
+  }
+
+  .page-header__logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-header__logo img {
+    display: block;
+    width: 113px;
+    height: auto;
   }
 
   .page-header__info {
     display: block;
     position: absolute;
-    bottom: -20px;
-    right: 0;
+    top: 106px;
+    right: 50px;
+    z-index: 2;
   }
 }
 
@@ -35,5 +65,12 @@
   .page-header__logo {
     position: absolute;
     left: calc(50% - 75px);
+    z-index: 5;
+  }
+
+  .page-header__logo img {
+    display: block;
+    width: 154px;
+    height: auto;
   }
 }

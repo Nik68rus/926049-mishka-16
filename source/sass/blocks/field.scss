@@ -1,11 +1,55 @@
+@import "../mixin.scss";
+
 .field__input {
+  position: relative;
   min-width: 260px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-right: 40px;
+  box-sizing: border-box;
   border: none;
   border-bottom: 2px solid $black;
+  font-family: inherit;
   font-size: 17px;
   line-height: 1.06;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+}
+
+.field {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  color: $black-light;
+}
+
+.field::after {
+  @include pseudo(40px,40px);
+  right: 0;
+  bottom: 15px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  opacity: 0.2;
+}
+
+.field--phone::after {
+  background-image: url("../img/icon-phone.svg");
+  right: 2px;
+}
+
+.field--mail::after {
+  background-image: url("../img/icon-mail.svg");
+}
+
+@media (max-width: $mobile-width-only) {
+  .field__input {
+    display: block;
+    width: 100%;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -13,11 +57,39 @@
     display: flex;
   }
 
-  .field__input {
-    width: 100%;
+  .field__label {
+    align-self: center;
+    padding-right: 25px;
+    font-size: 19px;
+    line-height: 0.95;
   }
 
-  .field__input--dark {
-    background-color: $gray;
+  .field__input {
+    padding-top: 8px;
+    padding-bottom: 14px;
+    padding-left: 17px;
+    padding-right: 60px;
+    font-size: 19px;
+    line-height: 0.95;
+    flex-grow: 1;
+  }
+
+  .field--mail::after {
+    bottom: 10px;
+    right: 22px;
+  }
+
+  .field--phone::after {
+    right: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field--mail::after {
+    right: 7px;
+  }
+
+  .field--phone::after {
+    right: 10px;
   }
 }

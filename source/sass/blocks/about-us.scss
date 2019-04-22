@@ -1,13 +1,81 @@
+@import "../mixin.scss";
+
 .about-us {
-  padding: 30px;
+  @include container();
+  padding-top: 28px;
+  padding-bottom: 10px;
+}
+
+.about-us__heading {
+  margin-bottom: 27px;
+}
+
+.about-us__list {
+  margin-bottom: 25px;
 }
 
 .about-us__item {
   font-size: 17px;
   line-height: 1.18;
   font-weight: 700;
+  padding-right: 10px;
   padding-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.about-us__item::before {
+  @include pseudo(54px,54px);
+  top: 0;
+  left: 0;
+}
+
+.about-us__item--ecology::before {
+  background-image: url("../img/icon-feature-flower.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 8px;
+}
+
+.about-us__item--style::before {
+  background-image: url("../img/icon-feature-money.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  top: 6px;
+  left: 0;
+}
+
+.about-us__item--like::before {
+  background-image: url("../img/icon-feature-heart.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  top: 13px;
+  left: 8px;
+}
+
+.about-us__item--love::before {
+  background-image: url("../img/icon-feature-ball.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  top: 8px;
+  left: 3px;
+}
+
+.about-us__item--russian::before {
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  top: 10px;
+  left: -5px;
+}
+
+.about-us__item--pack::before {
+  background-image: url("../img/icon-feature-gift.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  top: 9px;
+  left: 3px;
 }
 
 .about-us__item:last-of-type {
@@ -16,7 +84,12 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding-left: 0;
+    padding-top: 38px;
+    padding-bottom: 57px;
+  }
+
+  .about-us__heading {
+    margin-bottom: 33px;
   }
 
   .about-us__wrapper {
@@ -24,17 +97,34 @@
   }
 
   .about-us__list {
-    width: 350px;
+    width: 50%;
   }
 
   .about-us__item {
     font-size: 20px;
     line-height: 1.1;
+    margin-bottom: 52px;
+    padding-right: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
-    padding-left: 175px;
+    padding-top: 60px;
+    padding-bottom: 63px;
+    padding-left: 220px;
+    padding-right: 222px;
+  }
+
+  .about-us__heading {
+    margin-bottom: 42px;
+  }
+
+  .about-us__wrapper {
+    padding-left: 5px;
+  }
+
+  .about-us__item {
+    padding-right: 50px;
   }
 }

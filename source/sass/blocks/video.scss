@@ -13,4 +13,13 @@
   height: 77px;
   background-image: url("../img/icon-play.svg");
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }

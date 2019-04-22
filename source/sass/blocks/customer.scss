@@ -1,47 +1,89 @@
+.customer__name {
+  @include container();
+  padding-bottom: 32px;
+}
+
 .customer__name-heading {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .customer__field {
-  display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+}
+
+.customer__field:last-of-type {
+  margin-bottom: 0;
 }
 
 .customer__field-label {
-  display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .customer__contacts-heading {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .customer__adinfo-heading {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+}
+
+.customer__contacts {
+  @include container();
 }
 
 .customer__contact {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .customer__additional-info {
-  margin-bottom: 16px;
+  @include container();
+  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
+  .customer {
+    padding-top: 52px;
+  }
+
   .customer__name {
+    padding-bottom: 50px;
     display: flex;
   }
 
   .customer__name-wrapper {
-    width: 100%;
+    flex-grow: 1;
   }
 
   .customer__field {
-    display: flex;
+    margin-bottom: 26px;
   }
 
   .customer__contacts {
-    background-color: $gray;
+    padding-top: 51px;
+    padding-bottom: 23px;
+  }
+
+  .customer__contact {
+    margin-bottom: 27px;
+  }
+
+  .customer__additional-info {
+    padding-top: 50px;
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .customer__name {
+    padding-right: 225px;
+  }
+
+  .customer__contacts {
+    padding-right: 225px;
+  }
+
+  .customer__additional-info {
+    padding-right: 225px;
+    padding-bottom: 47px;
   }
 }

@@ -6,7 +6,7 @@
 }
 
 .social-list__item {
-  margin-right: 35px;
+  margin-right: 41px;
 }
 
 .social-list__item:last-of-type {
@@ -18,5 +18,12 @@
   position: relative;
   font-size: 0;
   line-height: 0;
-  padding-bottom: 22px;
+}
+
+.social-list__link:hover path {
+  fill: #46c1ae;
+}
+
+.social-list__link:active svg {
+  opacity: 0.3;
 }

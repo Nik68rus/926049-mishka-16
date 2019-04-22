@@ -20,3 +20,16 @@
   border: none;
   background-color: transparent;
 }
+
+@mixin container () {
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  max-width: 1150px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

@@ -1,13 +1,27 @@
 @import "../variables.scss";
+@import "../mixin.scss";
 
 .page-footer {
-  padding: 20px 30px;
   background-color: $gray;
 }
 
+
+.page-footer__wrapper {
+  @include container();
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .page-footer__social {
-  border-bottom: 1px solid $gray-dark;
-  margin-bottom: 22px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.page-footer__social::after {
+  @include pseudo (100%, 1px);
+  left: 0;
+  bottom: 22px;
+  background-color: $gray-dark;
 }
 
 .page-footer__logo {
@@ -19,8 +33,27 @@
     display: block;
   }
 
-  .page-footer {
+  .page-footer__logo[href]:hover path {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo[href]:active {
+    opacity: 0.3;
+  }
+
+  .page-footer__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .page-footer__social {
+    padding-bottom: 0;
+    padding-left: 78px;
+  }
+
+  .page-footer__social::after {
+    display: none;
   }
 }
