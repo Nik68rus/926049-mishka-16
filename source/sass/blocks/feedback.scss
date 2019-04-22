@@ -2,14 +2,14 @@
 @import "../variables.scss";
 
 .feedback {
-  padding-top: 21px;
-  padding-bottom: 48px;
   position: relative;
 }
 
 .feedback__container {
   @include container();
   position: relative;
+  padding-top: 21px;
+  padding-bottom: 48px;
 }
 
 .feedback__heading {
@@ -76,28 +76,41 @@
   background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  border-right: none;
+  position: relative;
+}
+
+.feedback__nav-button--prev::after {
+  @include pseudo(1px, 100%);
+  background-color: $gray;
+  left: 100%;
+  top: 0;
 }
 
 .feedback__nav-button--next {
   background-image: url("../img/icon-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  border-left: none;
 }
 
 .feedback::after {
-  @include pseudo(100%, 23px);
+  @include pseudo(100%, 6px);
   bottom: 0;
   left: 0;
   background-color: transparent;
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: contain;
-  background-repeat: no-repeat;
   background-position: bottom center;
 }
 
 
 @media (min-width: $tablet-width) {
-  .feedback {
+  .feedback::after {
+    height: 15px;
+  }
+
+  .feedback__container {
     padding-top: 69px;
     padding-bottom: 97px;
     background-image: url("../img/review@1x.jpg");
@@ -132,9 +145,13 @@
     border-color: transparent;
   }
 
+  .feedback__nav-button--prev::after {
+    background-color: transparent;
+  }
+
   .feedback__write-button {
     position: absolute;
-    top: 9px;
+    top: 79px;
     right: 50px;
     width: 175px;
   }
@@ -143,8 +160,11 @@
 @media (min-width: $desktop-width) {
   .feedback {
     padding-left: 50px;
-    padding-bottom: 150px;
-    background-position: 50px top;
+    padding-bottom: 54px;
+  }
+
+  .feedback::after {
+    height: 23px;
   }
 
   .feedback__container {
