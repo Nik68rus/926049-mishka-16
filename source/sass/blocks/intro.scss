@@ -35,6 +35,7 @@
     background: url("../img/hero-tablet@1x.jpg");
     background-size: cover;
     background-position: center -5px;
+    border-top: 1px solid $gray;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
