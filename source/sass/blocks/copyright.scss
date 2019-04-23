@@ -18,9 +18,10 @@
 .copyright__link {
   font-size: 0;
   line-height: 0;
+  fill: $sea-foam-blue;
 }
 
-.copyright__link:hover path {
+.copyright__link:hover {
   fill: #46c1ae;
 }
 
