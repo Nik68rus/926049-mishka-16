@@ -137,6 +137,7 @@
 
   .item__price-wrapper {
     padding-top: 24px;
+    padding-left: 6px;
   }
 }
 
@@ -153,10 +154,14 @@
 
   .item__data {
     flex-grow: 1;
-    padding-top: 24px;
+    padding-top: 27px;
   }
 
   .item__description {
     margin-bottom: 13px;
+  }
+
+  .item__price-wrapper {
+    padding-left: 0;
   }
 }
