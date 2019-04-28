@@ -52,11 +52,7 @@ gulp.task("images", function () {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
-      imagemin.svgo({
-				plugins: [
-					{removeViewBox: false}
-				]
-			})
+      imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"));
 });
