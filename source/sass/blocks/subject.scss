@@ -55,11 +55,13 @@
     margin-right: 27px;
     margin-bottom: 25px;
   }
-}
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .subject__color-item:nth-of-type(2n) {
-    margin-right: 0;
+  //почему-то вот это не работает?
+
+  @media (max-width: $tablet-width-only) {
+    .subject__color-item:nth-of-type(2n) {
+      margin-right: 0;
+    }
   }
 }
 
