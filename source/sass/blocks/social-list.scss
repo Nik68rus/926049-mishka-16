@@ -18,10 +18,11 @@
   position: relative;
   font-size: 0;
   line-height: 0;
+  color: $black;
 }
 
 .social-list__link:hover {
-  fill: #46c1ae;
+  color: #46c1ae;
 }
 
 .social-list__link:active svg {
