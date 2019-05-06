@@ -23,6 +23,26 @@ if (addBtn) {
   });
 };
 
+window.addEventListener("keydown", function (evt) {
+	if (evt.keyCode === 27) {
+		evt.preventDefault();
+		if (modalWindow.classList.contains('modal--showing')) {
+			modalWindow.classList.remove('modal--showing');
+			modalWindow.classList.add('modal--closed');
+		}
+	}
+});
+
+if (modalWindow) {
+  modalWindow.addEventListener("click", function (evt) {
+    var target = evt.target;
+    if (target.classList.contains('modal')) {
+      target.classList.remove('modal--showing');
+      target.classList.add('modal--closed');
+    };
+  });
+};
+
 navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function() {

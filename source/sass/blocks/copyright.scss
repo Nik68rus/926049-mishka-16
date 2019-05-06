@@ -4,21 +4,23 @@
   align-items: center;
 }
 
-.copyright__text {
+.copyright__link {
+  display: flex;
+  align-items: center;
   font-size: 19px;
   line-height: 0.95;
   font-weight: 700;
-  margin-right: 30px;
+  color: black;
+  text-decoration: none;
+  fill: $sea-foam-blue;
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
 }
 
-.copyright__link {
-  font-size: 0;
-  line-height: 0;
-  fill: $sea-foam-blue;
+.copyright__link svg {
+  margin-left: 30px;
 }
 
 .copyright__link:hover {

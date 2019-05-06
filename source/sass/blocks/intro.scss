@@ -32,7 +32,7 @@
   }
 
   .intro {
-    background: url("../img/hero-tablet@1x.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg");
     background-size: cover;
     background-position: center -1px;
     border-top: 1px solid $gray;
@@ -66,10 +66,12 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    background-image: url("../img/hero-desktop@1x.jpg"), url("../img/bg-zigzag-fill.svg");
-    background-size: cover, cover;
-    background-position: center -2px, center bottom;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center -2px;
     min-height: 742px;
+    background-color: #f9f9f9;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

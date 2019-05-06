@@ -6,6 +6,8 @@
 
 .video__play {
   position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 38px);
   border: none;
   background-color: transparent;
   font-size: 0;

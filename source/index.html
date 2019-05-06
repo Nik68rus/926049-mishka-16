@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
   </head>
@@ -139,7 +141,7 @@
               <button class="feedback__nav-button feedback__nav-button--next" type="button">Следующий отзыв</button>
             </div>
           </div>
-          <button class="button feedback__write-button" type="button">Написать</button>
+          <a class="button feedback__write-button" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
@@ -155,7 +157,7 @@
           </tr>
         </table>
         <div class="contacts__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A829f780a6fb7db2996a44c780b6dd846f00ae50a464ac6ce6a83c5c9a3532e43&amp;source=constructor" width="100%" height="457"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A829f780a6fb7db2996a44c780b6dd846f00ae50a464ac6ce6a83c5c9a3532e43&amp;source=constructor" height="457"></iframe>
         </div>
         <a class="button contacts__button" href="#">Напишите нам</a>
       </section>
@@ -186,9 +188,8 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            HTML Academy
+            Разработано
             <svg width="26.94" height="34.1"><use xlink:href="#logo-htmlacademy"></use></svg>
           </a>
         </div>
@@ -221,6 +222,7 @@
         <button class="button modal__close" type="submit">Добавить</button>
       </form>
     </section>
-    <script src="js/app.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

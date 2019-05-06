@@ -38,11 +38,13 @@
 
 .field--phone::after {
   background-image: url("../img/icon-phone.svg");
-  right: 2px;
+  right: 6px;
 }
 
 .field--mail::after {
   background-image: url("../img/icon-mail.svg");
+  right: 4px;
+  bottom: 9px;
 }
 
 @media (max-width: $mobile-width-only) {
