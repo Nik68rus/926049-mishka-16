@@ -24,13 +24,13 @@ if (addBtn) {
 };
 
 window.addEventListener("keydown", function (evt) {
-	if (evt.keyCode === 27) {
-		evt.preventDefault();
-		if (modalWindow.classList.contains('modal--showing')) {
-			modalWindow.classList.remove('modal--showing');
-			modalWindow.classList.add('modal--closed');
-		}
-	}
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (modalWindow.classList.contains('modal--showing')) {
+      modalWindow.classList.remove('modal--showing');
+      modalWindow.classList.add('modal--closed');
+    }
+  }
 });
 
 if (modalWindow) {
