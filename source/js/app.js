@@ -9,7 +9,8 @@ var buyBtn = document.querySelectorAll('.item__add-to-cart');
 
 
 if (orderBtn) {
-  orderBtn.addEventListener('click', function() {
+  orderBtn.addEventListener('click', function(evt) {
+    evt.preventDefault();
     modalWindow.classList.remove('modal--closed');
     modalWindow.classList.add('modal--showing');
   });
@@ -56,7 +57,8 @@ navToggle.addEventListener('click', function() {
 });
 
 for (var i=0; i<buyBtn.length; i++) {
-  buyBtn[i].addEventListener('click', function() {
+  buyBtn[i].addEventListener('click', function(evt) {
+    evt.preventDefault();
     modalWindow.classList.remove('modal--closed');
     modalWindow.classList.add('modal--showing');
   });
